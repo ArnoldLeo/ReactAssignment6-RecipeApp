@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Work+Sans:wght@500&display=swap');
+body{
+    box-sizing: border-box;
+}
+header {
+    padding: 30px 40px;
+    background-color: black;
+    /* opacity: 0.7; */
+    background-image: url(https://cloud.indiaimagine.com/wp-content/uploads/2019/08/Indian_Food_Cover-696x273.jpg);
+    /* background-image: url(https://image.shutterstock.com/image-photo/top-view-fully-set-rustic-260nw-772641289.jpg); */
+    
+    font-family: 'Monoton', cursive;
+    font-family: 'Work Sans', sans-serif;
+}
+h1{
+    color: #ffc107;
+    background: beige;
+    width: 400px;
+    font-size: 60px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+.recipe-list{
+    margin: 10px;
+    border: 2px solid grey;
+    width:21%;
+    padding: 10px;
+    height: 600px;
+    overflow-y:auto;
+}
+.recipe-list::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.card-img-top{
+    width: 95%;
+    margin: 10px auto;
+}
+.recipes{
+    position: relative;
+    top: -620px;
+    left: 90px;
+}
+.dish-card{
+    position: relative;
+    left: 300px;
+    width:70%;
+    height: 300px;
+}
