@@ -1,21 +1,19 @@
-import React,{useState} from 'react'
+import React from 'react'
 import './style.css'
 
-function Recipes({dish}) {
-  // const [dishes, setdishes] = useState({})
-    console.log(dish);
+function Recipes({ dish }) {
+  console.log('recipe', dish);
+  // const{dish}=dish
   return (
     <div>
-       <div className='recipes'>
-            <h1>Recipe</h1>
-            <div className="card dish-card mt-3">
-        <img src={dish.dish.image} className="card-img-top" alt="..." />
+      <h1 className='mt-2 dish-head'>Recipe</h1>
+      <div className="dish-card border mt-3">
+        <img src={dish.image} className="card-img-top" alt={dish.name} />
         <div className="card-body">
-            <h3>{dish.dish.name}</h3>
-          <p className="card-text">{dish.dish.procedure}</p>
+          <h3>{dish.name}</h3>
+          <p className="card-text">{dish.procedure}</p>
         </div>
       </div>
-        </div>
     </div>
   )
 }

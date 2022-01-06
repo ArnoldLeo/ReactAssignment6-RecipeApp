@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Work+Sans:wght@500&display=swap');
-body{
+.App{
     box-sizing: border-box;
+    height: 100%;
 }
 header {
     padding: 30px 40px;
@@ -21,14 +22,18 @@ h1{
     margin: 0 auto;
     text-transform: uppercase;
 }
-.recipe-list{
-    margin: 10px;
-    border: 2px solid grey;
-    width:21%;
-    padding: 10px;
-    height: 600px;
-    overflow-y:auto;
+.title{
+    position: relative;
+    left:60px;
 }
+.dish-head{
+    background: none;
+}
+ .recipe-list{
+    border: 2px solid grey;
+    height: 90%;
+    overflow-y:auto;
+} 
 .recipe-list::-webkit-scrollbar{
     display: none;
 }
@@ -36,18 +41,30 @@ h1{
     cursor: pointer;
     margin-bottom: 10px;
 }
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .card-img-top{
     width: 95%;
     margin: 10px auto;
 }
-.recipes{
-    position: relative;
-    top: -620px;
-    left: 90px;
-}
+
 .dish-card{
+    border: 2px solid grey;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.home-msg{
+    display: inline-block;
     position: relative;
-    left: 300px;
-    width:70%;
-    height: 300px;
+    left: -70px;
+    width:60%;
+    background: none;
+    color: crimson;
+    font-size: 35px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
